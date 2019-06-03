@@ -12,5 +12,5 @@
 * [Kernel](https://www.kaggle.com/abhmul/keras-convnet-lb-0-0052-w-visualization) original dont provient la plupart du code
 
 ## Quelques resources
-[Introduction](https://bit.ly/315tIID) aux réseaux de neurones
-[Tutos](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html) d'introduction à Keras
+* [Introduction](https://bit.ly/315tIID) aux réseaux de neurones
+* [Tutos](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html) d'introduction à Keras
