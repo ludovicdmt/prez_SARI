@@ -63,3 +63,4 @@ graph/*
 
 # Notebook
 .ipynb_checkpoints/*
+*.odp
