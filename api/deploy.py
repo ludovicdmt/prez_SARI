@@ -12,7 +12,7 @@ app = flask.Flask(__name__)
 
 # load the model, and pass in the custom metric function
 global graph
-graph = tf.get_default_graph()
+#graph = tf.get_default_graph()
 model = load_model('../weights/leafnet.h5')
 
 # define a predict function as an endpoint 
@@ -29,9 +29,9 @@ def predict():
         #x=pd.DataFrame.from_dict(params, orient='index').transpose()
         x = [np.array(params[0]), np.array(params[1])]
 
-        with graph.as_default():
-            data["prediction"] = str(model.predict(x))
-            data["success"] = True
+#        with graph.as_default():
+        data["prediction"] = str(model.predict(x))
+        data["success"] = True
     del params
     # return a response in json format 
     return flask.jsonify(data)    
