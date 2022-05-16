@@ -2,8 +2,8 @@
 import flask
 import pandas as pd
 import tensorflow as tf
-import keras
-from keras.models import load_model
+import tensorflow.keras
+from tensorflow.keras.models import load_model
 import numpy as np
 
 # instantiate flask 
@@ -11,7 +11,7 @@ app = flask.Flask(__name__)
 
 
 # load the model, and pass in the custom metric function
-global graph
+#global graph
 #graph = tf.get_default_graph()
 model = load_model('../weights/leafnet.h5')
 
@@ -37,4 +37,4 @@ def predict():
     return flask.jsonify(data)    
 
 # start the flask app, allow remote connections 
-app.run(host='0.0.0.0')
+app.run(host='0.0.0.0', port = 5001)
